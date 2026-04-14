@@ -30,9 +30,14 @@ public class main {
         Livre livre2=new Livre("Vol de nuit",a1,248);
         Livre livre3=new Livre("L'Etranger",a2,184);
         
+        Genre g1=new Genre("Roman","un roman quoi");
+        
         b1.ajouterLiver(livre1);
         b1.ajouterLiver(livre2);
         b1.ajouterLiver(livre3);
+        
+        livre3.ajouterGenre(g1);
+        a1.updateAnnee(1900);
         
         a1.afficherAuteur();
         livre3.afficherLivre();

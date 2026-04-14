@@ -13,18 +13,23 @@ package bibliotheque;
 public class Auteur {
     String nom;
     String prenom;
-    int datenaissance;
+    int dateNaissance;
     
     public Auteur(String nom, String prenom, int datenaissance){
         this.nom=nom;
         this.prenom=prenom;
-        this.datenaissance=datenaissance;
+        this.dateNaissance=datenaissance;
     }
     
     public void afficherAuteur(){
         System.out.println("Nom de l'auteur : "+nom);
         System.out.println("Prénom de l'auteur : "+prenom);
-        System.out.println("Date de naissance de l'auteur : "+datenaissance);
+        System.out.println("Date de naissance de l'auteur : "+dateNaissance);
+    }
+    
+        public void updateAnnee(int annee){
+        this.dateNaissance=annee;
+        
     }
     
 }
